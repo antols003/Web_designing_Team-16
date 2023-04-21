@@ -213,7 +213,6 @@ body {
     }
     
     
-    /* Clear floats after the columns */
     .row:after {
       content: "";
       display: table;
@@ -224,11 +223,10 @@ body {
       float: left;
       width: 20%;
       padding: 10px;
-      height: 700px; /* Should be removed. Only for demonstration */
+      height: 700px; 
       border-radius: 20px;
     }
     
-    /* Clear floats after the columns */
     .row:after {
       content: "";
       display: table;
