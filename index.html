@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body>
+    <!-- <div class="mode">
+        Dark mode:             
+        <span class="change">OFF</span>
+    </div> -->
+    <main>
+        <div class="mode">
+            Dark mode:             
+            <span class="change">OFF</span>
+        </div>
+        <div class="row">
+            <div class="column"
+            >
+                <i class="fas fa-bars"style="font-size:30px;color:white;"></i>
+                <div class="margin1">
+                    <i class="fas fa-home"style="font-size:30px;color:white;" ></i>
+                    <btn class="button" button type="button"><span>Home </span>
+                    </div>
+                <div class="margin2">
+                    <i class="fas fa-search "style="font-size:30px;color:white;"></i>
+                    <btn class="button" button type="button"><span>Search </span>
+                    </div>
+                <div class="margin3">
+                    <i class="fas fa-book "style="font-size:30px;color:white;"></i>
+                    <btn class="button" button type="button"><span>Libraries </span>
+                </div>
+                <div class="margin4">
+                    <i class="fas fa-heart"style="font-size:30px;color:white;"></i>
+                    <btn class="button" button type="button"><span>Liked </span>
+                    </div>
+                <div class="margin5">
+                    <i class="fas fa-play-circle"style="font-size:30px;color:white;"></i>
+                    <btn class="button" button type="button"><span>Playlists </span>
+                    </div>
+                <b><hr></b>
+                <h2 style="color:white;">Artists</h2>
+                <div class="margin6">
+                    <!-- <button class="button"><span>AllanWalker </span> -->
+                        <btn class="button" button type="button"><span>AlanWalker </span>
+
+                </div>
+                <div class="margin7">
+                    <!-- <button class="button"><span>Anirudh </span> -->
+                        <btn class="button" button type="button"><span>Anirudh </span>
+
+                </div>
+                <div class="margin8">
+                    <!-- <button class="button"><span>SelenaGomez</span> -->
+                        <btn class="button" button type="button"><span>SelenaGomez </span>
+   
+                </div>
+                <div class="margin9">
+                    <!-- <button class="button"><span>Rahman.AR </span> -->
+                        <btn class="button" button type="button"><span>Rahman.AR </span>
+
+                </div>
+                <b><hr></b>
+                <h2 style="color:white;">Recently played</h2>
+                <div class="margin10">
+                    <btn class="button" button type="button"><span style="font-size: 15px;">Despacito <span style="font-size: 10px;">- by Justin Bieber</span></span>
+
+                    <!-- <button class="button"><span>Despacito <span style="font-size: 10px;">- by Justin Bieber</span></span> -->
+                </div>
+                <div class="playlist">
+                <div class="column2" style="	background:linear-gradient(0deg,rgba(194.00000363588333, 109.00000110268593, 235.0000011920929, 1) 0%,rgba(225.00000178813934, 53.00000064074993, 191.00000381469727, 1) 46.35416567325592%,rgba(50.000000819563866, 5.000000176951289, 63.000000044703484, 1) 100%) ;">
+                    <img src="images/dandelions.png" alt="Avatar" style="width:50px">
+                     <h3 style="margin-top: -60px; margin-left: 100px; color: white;">Dandelions</h3>
+                     <p style="margin-top: 0px; margin-left: 100px; color: white;">Ruth B</p>
+                </div>
+                <div class="column3" style="	background:linear-gradient(0deg, rgba(194.00000363588333, 109.00000110268593, 235.0000011920929, 1) 0%,rgba(225.00000178813934, 53.00000064074993, 191.00000381469727, 1) 46.35416567325592%,rgba(50.000000819563866, 5.000000176951289, 63.000000044703484, 1) 100%) ;">
+                    <img src="images/faded.png" alt="Avatar" style="width:50px">
+                    <h3 style="margin-top: -60px; margin-left: 100px; color: white;">Faded</h3>
+                        <p style="margin-left: 100px; color: white;">Alan Walker</p>
+                    </div>
+                    <div class="column4" style="background:linear-gradient(0deg, rgba(194.00000363588333, 109.00000110268593, 235.0000011920929, 1) 0%,rgba(225.00000178813934, 53.00000064074993, 191.00000381469727, 1) 46.35416567325592%,rgba(50.000000819563866, 5.000000176951289, 63.000000044703484, 1) 100%) ;">
+                        <img src="images/loki.png" alt="Avatar" style="width:30px" style="margin-bottom: 100px;" >
+                        
+                        <h3 style="margin-top: -50px; margin-left: 100px; color: white;"></h3style>LokiVerse</h3>
+                     <p style="margin-top: 0px; margin-left: 100px; color: white;">Anirudh</p>
+                        </div>
+                    </div>
+        
+        
+        
+            </div>
+        
+        </div>
+           
+           <div class="player">
+           <div class="wrapper">
+               <div class="details">
+                   <div class="now-playing">PLAYING x OF y</div>
+                   <div class="track-art"></div>
+                   <div class="track-name">Track Name</div>
+                   <div class="track-artist">Track Artist</div>
+               </div>
+               <div class="slider_container">
+                   <div class="cuti">00:00</div>
+                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="todu">00:00</div>
+               </div>
+               <div class="slider_container">
+                   <i class="fa fa-volume-down"></i>
+                    <input type="range" min="1" max="100" value="99" class="vosl" onchange="setVolume()">
+                    <i class="fa fa-volume-up"></i>
+               </div>
+               <div class="buttons">
+                   <div class="random-track" onclick="randomTrack()">
+                       <i class="fas fa-random fa-2x" title="random"></i>
+                   </div>
+                   <div class="prev-track" onclick="prevTrack()">
+                        <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                        <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <div class="next-track" onclick="nextTrack()">
+                        <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                    <div class="repeat-track" onclick="repeatTrack()">
+                        <i class="fa fa-repeat fa-2x" title="repeat"></i>
+                    </div>
+               </div>
+                <div id="wave">
+                    <span class="stke"></span>
+                    <span class="stke"></span>
+                    <span class="stke"></span>
+                    <span class="stke"></span>
+                    <span class="stke"></span>
+                    <span class="stke"></span>
+                    <span class="stke"></span>
+                </div>
+           </div>
+           </div>
+
+           <div class="column1">
+           <div class="lyric">
+        <h2>Lyrics</h2>
+        <marquee behavior="scroll" direction="up" style="height:200px" scrollamount="1.4" ;>Nee Kavidhaigala ?.... <br> Kanavugala ?....<br> Kayalvizhiye !....<br> Naan... Nigazvathuvaa ?...<br> Kadanthathuvaa ?....<br> Bathil Mozhiyean...!<br> Unnodu Nenjam....<br> Uravaadum Velai...<br> Thaneer Kamalam Thaanaa?....<br> Mugam Kaattu
+            Nee..
+            <br> Muzhu Venpani...<br> Moodathe Nee...<br> Yen Yellaiye...!<br> Ithazhoramaai....
+            <br> Siru Punnagai....<br> Nee Kattadi....<br> Yen Mullaiye..!<br> Mazhaiyodu Nanaiyum...!<br> Pudhu Paadal Neethaan...!<br> Azhagaana Thimire Adiye Adiye...<br> Kaatrodu Paravum Unvaasam...<br> Dhinamum Pudhu Bothai Thaanee....<br> Silaiyee
+            Azhagee Azhagee...!<br> Naan Unakenave...<br> Mudhal Pirandhen Ilangodiye...<br> Nee Yenakenave....<br> Karam Virithaai En Varame.....<br> Mandhaara Poo Pola....<br> Macham Kaanum Vela....<br> Yennaththa Naan Solla....<br> Micham Onnum Illa....
+            <br> Muzhu Madhiyinil... Pani Iravinil....<br> Thani Pozhudhinil Odaathe.......<br> Mugam Kaattu Nee....<br> Muzhu Venpani....<br> Moodathe Nee....<br> Yen Yellaiye....!<br> Ithazhoramaai....
+            <br> Siru Punnagai....<br> Nee Kattadi....<br> Yen Mullaiye....!<br> Nee Kavithaigalaa...?<br> Kanavugalaa...?
+            <br> Kayal Vizhiye....<br> Naan Nigazvathuvaa...?<br> Kadanthathuvaa...?
+            <br> Unnodu Nenjam....<br> Uravaadum Velai....<br> Thaneer Kamalam Thaanaa....?<br> Mugam Kaattu Nee....<br> Muzhu Venpani....<br> Moodathe Nee....<br> Yen Yellaiye....!<br> Ithazhoramaai....
+            <br> Siru Punnagai....<br> Nee Kattadi....<br> Yen Mullaiye....!<br> Mugam Kaattu Nee....<br> Muzhu Venpani....<br> Moodathe Nee....<br> Yen Yellaiye....<br> Ithazhoramaai....
+            <br> Siru Punnagai....<br> Nee Kattadi....<br> Yen Mullaiyeh !....<br></marquee>
+        </div>
+
+    </main>
+</div>
+<script src="a.js"></script>
+
+</body>
+</html>
